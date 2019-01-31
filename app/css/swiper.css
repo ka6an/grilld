@@ -1,0 +1,521 @@
+/**
+ * Swiper 4.3.3
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * http://www.idangero.us/swiper/
+ *
+ * Copyright 2014-2018 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: June 5, 2018
+ */
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-thumbs-wrap {
+  position: relative;
+  width: 27.63888888888889vw;
+  margin: 0 auto;
+}
+
+.swiper-container-no-flexbox .swiper-slide {
+  float: left;
+}
+
+.swiper-container-vertical>.swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-container-multirow>.swiper-wrapper {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.swiper-container-free-mode>.swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.swiper-invisible-blank-slide {
+  visibility: hidden;
+}
+
+
+
+/* Auto Height */
+
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-transition-property: height, -webkit-transform;
+  transition-property: height, -webkit-transform;
+  -o-transition-property: transform, height;
+  transition-property: transform, height;
+  transition-property: transform, height, -webkit-transform;
+}
+
+
+
+/* IE10 Windows Phone 8 Fixes */
+
+.swiper-container-wp8-horizontal,
+.swiper-container-wp8-horizontal>.swiper-wrapper {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.swiper-container-wp8-vertical,
+.swiper-container-wp8-vertical>.swiper-wrapper {
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-lock {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 300ms opacity;
+  -o-transition: 300ms opacity;
+  transition: 300ms opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+
+
+/* Common Styles */
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+
+
+/* Bullets */
+
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  -webkit-transform: scale(0.33);
+  -ms-transform: scale(0.33);
+  transform: scale(0.33);
+  position: relative;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  -webkit-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  -webkit-transform: scale(0.33);
+  -ms-transform: scale(0.33);
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  -webkit-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  -webkit-transform: scale(0.33);
+  -ms-transform: scale(0.33);
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+}
+
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #007aff;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate3d(0px, -50%, 0);
+  transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 6px 0;
+  display: block;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 8px;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  display: inline-block;
+  -webkit-transition: 200ms top, 200ms -webkit-transform;
+  transition: 200ms top, 200ms -webkit-transform;
+  -o-transition: 200ms transform, 200ms top;
+  transition: 200ms transform, 200ms top;
+  transition: 200ms transform, 200ms top, 200ms -webkit-transform;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 4px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  -webkit-transition: 200ms left, 200ms -webkit-transform;
+  transition: 200ms left, 200ms -webkit-transform;
+  -o-transition: 200ms transform, 200ms left;
+  transition: 200ms transform, 200ms left;
+  transition: 200ms transform, 200ms left, 200ms -webkit-transform;
+}
+
+.swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  -webkit-transition: 200ms right, 200ms -webkit-transform;
+  transition: 200ms right, 200ms -webkit-transform;
+  -o-transition: 200ms transform, 200ms right;
+  transition: 200ms transform, 200ms right;
+  transition: 200ms transform, 200ms right, 200ms -webkit-transform;
+}
+
+
+
+/* a11y */
+
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.swiper-container-fade .swiper-slide {
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-container-coverflow .swiper-wrapper {
+  /* Windows 8 IE 10 fix */
+  -ms-perspective: 1200px;
+}
+
+
+
+/* product slider custom styles */
+
+.product-slider .gallery-thumbs .swiper-wrapper {
+  margin-left: calc(-50% + (4.861111111111111vw + 0.8333333333333333vw + 2px) / 2);
+}
+
+.product-slider .gallery-top {
+  width: 40.06944444444444vw;
+  height: 22.430555555555554vw;
+  margin-bottom: 5.555555555555555vw;
+}
+
+.product-slider .slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-slider .slider-previews__img-wrap {
+  width: 4.861111111111111vw;
+  height: 3.819444444444444vw;
+  margin-right: 0.8333333333333333vw;
+  cursor: pointer;
+}
+
+.product-slider .slider-previews__img-wrap.swiper-slide-active {
+  border: solid 1px #f24841;
+}
+
+.product-slider .swiper-button-prev,
+.product-slider .swiper-button-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.0416666666666667vw;
+  height: 1.6666666666666665vw;
+  margin: auto;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background: url(../img/icon-arrow.svg) no-repeat center center;
+}
+
+.product-slider .swiper-button-prev,
+.product-slider .swiper-container-rtl .swiper-button-next {
+  left: -2.7777777777777777vw;
+  transform: rotate(180deg);
+}
+
+.product-slider .swiper-button-next,
+.product-slider .swiper-container-rtl .swiper-button-prev {
+  right: -2.7777777777777777vw;
+}
+
+
+
+/* about slider custom styles */
+
+.about-slider .gallery-thumbs .swiper-wrapper {
+  margin-left: calc(-50% + (6.041666666666666vw + 0.6944444444444444vw) / 2);
+}
+
+.about-slider .gallery-top-wrap {
+  width: 100%;
+  margin-bottom: 1.1111111111111112vw;
+  position: relative;
+}
+
+.about-slider .gallery-top {}
+
+.about-slider .slider__img {
+  width: auto;
+  height: 100%;
+}
+
+.about-slider .slider-previews__img-wrap {
+  width: 6.041666666666666vw;
+  height: 6.041666666666666vw;
+  margin-right: 0.6944444444444444vw;
+  overflow: hidden;
+}
+
+.about-slider .slider-previews__img-wrap.swiper-slide-active {}
+
+.about-slider .swiper-button-prev,
+.about-slider .swiper-button-next,
+.about-video-slider .swiper-button-prev,
+.about-video-slider .swiper-button-next {
+  width: 8.819444444444445vw;
+  height: 8.819444444444445vw;
+  background: var(--color-black) url(../img/icon-arrow-white.svg) no-repeat;
+  opacity: 0.24;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 1.0416666666666667vw 2.2916666666666665vw;
+  background-position: 6.041666666666666vw;
+  cursor: pointer;
+}
+
+.about-slider .swiper-button-prev,
+.about-video-slider .swiper-button-prev {
+  left: -4.375vw;
+  transform: rotate(180deg);
+}
+
+.about-slider .swiper-button-next,
+.about-video-slider .swiper-button-next {
+  right: -4.375vw;
+}
+
+/* about-video slider custom styles */
+.about-video-slider .swiper-container-wrap{
+  position: relative;
+}
+.about-video-slider .swiper-slide{
+    width: 27.77777777777778vw;
+    margin-right: 1.3888888888888888vw;
+}
+.about-video-slider .swiper-button-prev,
+.about-video-slider .swiper-button-next{
+    top: 3.4722222222222223vw;
+    bottom: initial;
+}
+
+
+@media screen and (max-width: 860px){
+/* page product   */
+.product-slider .gallery-top{
+    width: 100%;
+    height: 51.388888888888886vw;
+    margin-bottom: 0;
+}
+.gallery-top-wrap{
+    position: relative;
+}
+.product-slider .swiper-button-prev, .product-slider .swiper-button-next{
+    width: 8.333333333333334vw;
+    height: 12.5vw;
+    background-color: rgba(74, 74, 74, 0.9);
+    background-size: 3.0555555555555554vw 6.666666666666666vw;
+    background-position: 3.0555555555555554vw center;
+}
+.product-slider .swiper-button-next, .product-slider .swiper-container-rtl .swiper-button-prev{
+    border-radius: 2.7777777777777777vw 0 0 2.7777777777777777vw;
+    right: -4.166666666666667vw;
+}
+.product-slider .swiper-button-prev, .product-slider .swiper-container-rtl .swiper-button-next{border-radius: 2.7vw 0 0 2.7vw;left: -4.166666666666667vw;}
+/* END page product */
+
+/*  page about */
+  .about-slider .swiper-button-prev, .about-slider .swiper-button-next, .about-video-slider .swiper-button-prev, .about-video-slider .swiper-button-next{
+    display: none;
+}
+.about-slider .slider-previews__img-wrap{}
+.about-video-slider .swiper-slide{
+    width: 100%;
+    margin-right: 0;
+}
+/* END page about */
+}
+

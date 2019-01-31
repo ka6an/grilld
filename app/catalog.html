@@ -1,0 +1,271 @@
+@@include('./template/header.html')
+<div class="page">
+  <div class="page-inner">
+    <div class="categories-menu">
+      <p class="categories-menu__title">Категории:</p>
+      <button type="button" class="btn categories-menu_btn categories-menu_btn_active">Aurora</button>
+      <button type="button" class="btn categories-menu_btn">Cometa</button>
+      <button type="button" class="btn categories-menu_btn">Durava</button>
+      <button type="button" class="btn categories-menu_btn">Fortuna</button>
+      <button type="button" class="btn categories-menu_btn">Показать все</button>
+    </div>
+    <div class="categories-menu-mobile">
+      <div class="select-wrap">
+        <select class="hidden">
+          <option value="0">Aurora</option>
+          <option value="0">Aurora</option>
+          <option value="0">Cometa</option>
+          <option value="0">Durava</option>
+          <option value="0">Fortuna</option>
+          <option value="0">Показать все</option>
+        </select>
+      </div>
+    </div>
+    <div class="filters-mobile">
+      <h3 class="filters-mobile__title">Фильтр
+        <span class="filters__arrow"></span>
+      </h3>
+      <div class="filters">
+        <p class="filters__title-h4">Фильтр</p>
+        <span class="filters_close"></span>
+        <h2 class="filters__title-h2">ваши характеристики</h2>
+        <div class="filters-wrap">
+          <div class="filters-item">
+            <h3 class="filters__title-h3">Объём парильного помещения</h3>
+            <div class="filters-item-cont">
+              <fieldset class="filters-checkbox">
+                <input id="mobile-checkbox-V-5" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-checkbox-V-5">5 м2</label>
+              </fieldset>
+              <fieldset class="filters-checkbox">
+                <input id="mobile-checkbox-V-10" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-checkbox-V-10">10 м2</label>
+              </fieldset>
+              <fieldset class="filters-checkbox">
+                <input id="mobile-checkbox-V-15" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-checkbox-V-15">15 м2</label>
+              </fieldset>
+              <fieldset class="filters-checkbox">
+                <input id="mobile-checkbox-V-20" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-checkbox-V-20">20 м2</label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filters-item">
+            <h3 class="filters__title-h3">место размещения</h3>
+            <div class="filters-item-cont">
+              <fieldset class="filters-checkbox">
+                <input id="mobile-place-1" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-place-1">5 м2</label>
+              </fieldset>
+              <fieldset class="filters-checkbox">
+                <input id="mobile-place-2" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-place-2">10 м2</label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filters-item">
+            <h3 class="filters__title-h3">тип стали</h3>
+            <div class="filters-item-cont">
+              <fieldset class="filters-checkbox">
+                <input id="mobile-steel-1" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-steel-1">Нержавейка</label>
+              </fieldset>
+              <fieldset class="filters-checkbox">
+                <input id="mobile-steel-2" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-steel-2">Углеродистая сталь</label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filters-item">
+            <h3 class="filters__title-h3">Внутренняя каменка</h3>
+            <div class="filters-item-cont">
+              <fieldset class="filters-checkbox">
+                <input id="mobile-heater-1" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-heater-1">5 м2</label>
+              </fieldset>
+              <fieldset class="filters-checkbox">
+                <input id="mobile-heater-2" class="filters-checkbox__input" type="checkbox" value="5">
+                <label class="filters-checkbox__label" for="mobile-heater-2">10 м2</label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="filters-optional">
+          <h3 class="filters-optional__text"><i class="filters-optional_icon icon_equip"></i>Доп. оборудование</h3>
+          <h3 class="filters-optional__text"><i class="filters-optional_icon icon_grill"></i>Грили</h3>
+          <h3 class="filters-optional__text"><i class="filters-optional_icon icon_stone-oven"></i>Отопительные печи</h3>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-wrap">
+      <div class="catalog-item">
+        <a href="./product-single.html">
+          <div class="catalog-item__img" style="background-image: url(../img/product-1.jpg)"></div>
+          <h4 class="catalog-item__title">Grill’D Aurora 160 Trio short black</h4>
+          <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+            <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+          </p>
+        </a>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-2.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-1.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-2.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-1.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-2.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-1.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-2.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-1.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+      <div class="catalog-item">
+        <div class="catalog-item__img" style="background-image: url(../img/product-2.jpg)"></div>
+        <h4 class="catalog-item__title">Grill’D Aurora 160 short black</h4>
+        <p class="catalog-item__text">Для растопки из парильного помещения Цвет:
+          <b class="catalog-item__text_b">топка, кожух-конвектор и дверца Объем парильного помещения: 6 - 16 м3</b>
+        </p>
+      </div>
+    </div>
+    <div class="catalog-wrap catalog-wrap_type-2">
+      <div class="catalog-item_star">
+        <h3 class="catalog-item__title">Трудно выбрать?</h3>
+        <img class="catalog-item__img" src="/img/star.svg" alt="">
+        <p class="catalog-item__text">Ознакомьтесь с отзывами других покупателей</p>
+        <button class="btn btn_red">Читать отзывы</button>
+      </div>
+      <div class="catalog-item_blog">
+        <h3 class="catalog-item__title">Личный блог</h3>
+        <button class="btn btn_red">Читать</button>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="contacts-header">
+        <fieldset class="switch">
+          <button class="btn switch__btn switch__btn_active">Розничные продажи</button>
+          <button class="btn switch__btn">Оптовые продажи</button>
+        </fieldset>
+      </div>
+      <div class="contacts-body">
+        <div class="shops">
+          <div class="shops-inner">
+            <p class="shops__title">Найдено 16 магазинов</p>
+            <div class="shops-item">
+              <h4 class="shops-item__title">Магазин «Печи. Камины.»</h4>
+              <div class="shops-item-cont">
+                <p class="shops-item__text"><i class="icon icon-loc"></i>17-й км МКАД, внешняя сторона, ТК "38М"</p>
+                <p class="shops-item__text"><i class="icon icon-metro"></i>м. Бибирево</p>
+              </div>
+            </div>
+            <div class="shops-item">
+              <h4 class="shops-item__title">R-SAUNA</h4>
+              <div class="shops-item-cont">
+                <p class="shops-item__text"><i class="icon icon-loc"></i>Путевой проезд, 3 строение 1.</p>
+                <p class="shops-item__text"><i class="icon icon-metro"></i>м. Бибирево</p>
+              </div>
+            </div>
+            <div class="shops-item">
+              <h4 class="shops-item__title">«Ваши бани» павильон на ТСК Кунцево-2
+              </h4>
+              <div class="shops-item-cont">
+                <p class="shops-item__text"><i class="icon icon-loc"></i>55-ый км МКАД, "ТСК Кунцево-2", ангар-43</p>
+                <p class="shops-item__text">
+                  <i class="icon icon-phone"></i>
+                  <span class="shops-item__text_span">+7 (495) 723-12-65</span>
+                  <br />
+                  <i class="icon"></i>
+                  <span class="shops-item__text_span">+7 (903) 753-07-58</span>
+                  <br />
+                  <i class="icon"></i>
+                  <span class="shops-item__text_span">+7 (903) 723-12-65</span>
+                </p>
+                <p class="shops-item__text"><i class="icon icon-site"></i>vashibani.ru</p>
+                <p class="shops-item__text"><i class="icon icon-mail"></i>info@vashibani.ru</p>
+              </div>
+            </div>
+            <div class="shops-item">
+              <h4 class="shops-item__title">Магазин «Печи. Камины.»</h4>
+              <div class="shops-item-cont">
+                <p class="shops-item__text"><i class="icon icon-loc"></i>17-й км МКАД, внешняя сторона, ТК "38М"</p>
+                <p class="shops-item__text"><i class="icon icon-metro"></i>м. Бибирево</p>
+              </div>
+            </div>
+            <div class="shops-item">
+              <h4 class="shops-item__title">R-SAUNA</h4>
+              <div class="shops-item-cont">
+                <p class="shops-item__text"><i class="icon icon-loc"></i>Путевой проезд, 3 строение 1.</p>
+                <p class="shops-item__text"><i class="icon icon-metro"></i>м. Бибирево</p>
+              </div>
+            </div>
+            <div class="shops-item">
+              <h4 class="shops-item__title">«Ваши бани» павильон на ТСК Кунцево-2
+              </h4>
+              <div class="shops-item-cont">
+                <p class="shops-item__text"><i class="icon icon-loc"></i>55-ый км МКАД, "ТСК Кунцево-2", ангар-43</p>
+                <p class="shops-item__text">
+                  <i class="icon icon-phone"></i>
+                  <span class="shops-item__text_span">+7 (495) 723-12-65</span>
+                  <br />
+                  <i class="icon"></i>
+                  <span class="shops-item__text_span">+7 (903) 753-07-58</span>
+                  <br />
+                  <i class="icon"></i>
+                  <span class="shops-item__text_span">+7 (903) 723-12-65</span>
+                </p>
+                <p class="shops-item__text"><i class="icon icon-site"></i>vashibani.ru</p>
+                <p class="shops-item__text"><i class="icon icon-mail"></i>info@vashibani.ru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="map"></div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('./template/footer.html')

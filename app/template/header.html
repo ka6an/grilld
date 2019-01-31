@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grilld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/css_reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+  <div class="content">
+    @@include('./left-side/left-side.html')
+    <header class="header">
+      <nav>
+        <a href="./catalog.html" class="nav__link nav__link_active">Каталог</a>
+        <a href="./about.html" class="nav__link">Компания</a>
+        <a href="#0" class="nav__link">Отзывы</a>
+        <a href="#0" class="nav__link">События</a>
+        <a href="#0" class="nav__link">Блог Смирнова</a>
+        <a href="#0" class="nav__link">Стать диллером</a>
+        <a href="#0" class="nav__link">Где купить?</a>
+        <a href="#0" class="nav__link">Контакты</a>
+      </nav>
+      <div class="header-right">
+        <div class="header-search">
+          <button id="btn-search-1" type="button" class="btn btn__search"></button>
+          <input class="header-search__input" placeholder="Поиск"></input>
+        </div>
+        <div class="header-lang">
+          <p class="header-lang__title"><i class="header-lang__icon icon_rus"></i>Русский</p>
+          <div class="header-lang-wrap">
+            <p class="header-lang-wrap__item"><i class="header-lang__icon icon_rus"></i>Русский</p>
+            <p class="header-lang-wrap__item"><i class="header-lang__icon icon_eng"></i>Английский</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header-left">
+        <div class="header-phone">
+          <span class="icon__phone"></span>
+        </div>
+        <div class="header-search header-search_mobile">
+          <button id="btn-search-mobile-1" type="button" class="btn btn__search"></button>
+          <div class="header-search_mobile-wrap">
+            <div class="header-search_mobile-wrap-inner">
+              <input class="header-search__input" placeholder="Поиск товара…"></input>
+              <button id="btn-search-mobile-2" class="btn btn__search_mobile">Найти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-logo">
+        <a class="header__link" href="/">
+          <img class="header__logo-img" src="/img/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="menu">
+        <span class="menu__icon"></span>
+      </div>
+      <nav class="nav">
+        <a href="./catalog.html" class="nav__link">Каталог</a>
+        <a href="./about.html" class="nav__link">Компания</a>
+        <a href="#0" class="nav__link">Отзывы</a>
+        <a href="#0" class="nav__link">События</a>
+        <a href="#0" class="nav__link">Блог Смирнова</a>
+        <a href="#0" class="nav__link">Стать диллером</a>
+        <a href="#0" class="nav__link">Где купить?</a>
+        <a href="#0" class="nav__link">Контакты</a>
+        <div class="header-lang">
+          <p id="header-lang-title-mobile" class="header-lang__title"><i class="header-lang__icon icon_rus"></i>Русский</p>
+          <div id="header-lang-mobile" class="header-lang-wrap">
+            <p class="header-lang-wrap__item"><i class="header-lang__icon icon_rus"></i>Русский</p>
+            <p class="header-lang-wrap__item"><i class="header-lang__icon icon_eng"></i>Английский</p>
+          </div>
+        </div>
+        <div class="social">
+          <a href="#0" class="social__btn social__btn_vk"></a>
+          <a href="#0" class="social__btn social__btn_fb"></a>
+          <a href="#0" class="social__btn social__btn_inst"></a>
+          <a href="#0" class="social__btn social__btn_google"></a>
+          <a href="#0" class="social__btn social__btn_mail"></a>
+          <a href="#0" class="social__btn social__btn_rss"></a>
+        </div>
+      </nav>
+    </header>

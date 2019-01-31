@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>envelopes5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Catalog" transform="translate(-387.000000, -2484.000000)" fill="#F24841" fill-rule="nonzero">
+            <g id="Магазины" transform="translate(350.000000, 1878.000000)">
+                <g id="Список-магазинов" transform="translate(20.000000, 162.000000)">
+                    <g id="envelopes5" transform="translate(17.000000, 444.000000)">
+                        <polygon id="Shape" points="5.95932203 4.75932203 0.528813559 0 11.3898305 0"></polygon>
+                        <polygon id="Shape" points="3.80338983 3.74237288 0 7.0779661 0 0.386440678"></polygon>
+                        <polygon id="Shape" points="4.29152542 4.16949153 5.95932203 5.63389831 7.62711864 4.16949153 11.3898305 7.46440678 0.528813559 7.46440678"></polygon>
+                        <polygon id="Shape" points="8.13559322 3.74237288 11.9389831 0.386440678 11.9389831 7.0779661"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

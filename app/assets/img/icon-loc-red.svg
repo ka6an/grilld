@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="15px" viewBox="0 0 10 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_local</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Catalog" transform="translate(-388.000000, -2365.000000)" fill="#F24841" fill-rule="nonzero">
+            <g id="Магазины" transform="translate(350.000000, 1878.000000)">
+                <g id="Список-магазинов" transform="translate(20.000000, 162.000000)">
+                    <path d="M23,325 C20.2431296,325 18,327.242498 18,330 C18,332.652509 22.5450004,339.566878 22.7393686,339.859377 C22.7968752,339.946254 22.8950067,340 23,340 C23.1049933,340 23.2024932,339.946254 23.2606314,339.859377 C23.454368,339.566878 28,332.652509 28,330 C28,327.242498 25.7568704,325 23,325 Z M23,332.187489 C21.79374,332.187489 20.8125108,331.206231 20.8125108,330 C20.8125108,328.793769 21.7937687,327.812511 23,327.812511 C24.2062313,327.812511 25.1874892,328.793769 25.1874892,330 C25.1874892,331.206231 24.2062313,332.187489 23,332.187489 Z" id="Icon_local"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
